@@ -1,0 +1,27 @@
+<div class="fullscreen-bg">
+        <video poster="../Media/dashboardbackground.webmhd.webm" autoplay="" class="fullscreen-bg__video" loop="">
+        <!--<source src="../Media/BlackSandsVik30R.webmhd.webm">-->
+         <source src="../Media/aboutpagebackground.webmhd.webm"></video>
+    </div>
+
+
+<div ng-controller= "usersController as userCtrl">
+
+<div class="list" class="hidden">
+            <ul class="collapsible" data-collapsible="expandable">
+				<li ng-repeat="user in userCtrl.userList">
+                   <div class="collapsible-header"><i class="material-icons">assignment_ind</i>{{user.crew}}</div>
+                    <div class="collapsible-body white">
+                        <ul style="padding: 2%">
+                          <li>Name: {{user.firstName}} {{user.lastName}}</li>
+                          <li>Email: {{user.email}}</li>
+                          <li>City: {{user.city}}</li>
+                          <li>State: {{user.state}}</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <button id="controlPanelButton" class="btn-large waves-effect waves-light green" ng-click= "userCtrl.open()">Generate</button>
+            <!-- <button ng-click="userCtrl.search.test" ng-click="userCtrl.open()">Test</button> -->
+        </div>
+    </div>

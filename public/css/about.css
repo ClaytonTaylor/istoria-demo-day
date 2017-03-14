@@ -1,0 +1,89 @@
+.nav-wrapper {
+    background-color: #343642;
+}
+
+nav {
+    background-color: #343642;
+}
+
+.section {
+    background:rgba(0,0,0,0);
+}
+
+.row-container {
+    background:rgba(0,0,0,0);
+    /*width: 100%;
+    height: 100%;*/
+}
+
+
+.fullscreen-bg {
+    /*position: relative;*/
+    /*height: 56%;*/
+    /*opacity: .1;*/
+    /*height: 0px;*/
+}
+
+.container {
+    width: 75%;
+    height: 100%;
+    /*margin-bottom: 76px;*/
+}
+
+.fullscreen-bg__video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translate(-50%, -50%);
+}
+
+.no-pad-bot {
+    /*background-color: rgba(0,0,0,2);*/
+    position: absolute;
+    /*top: 30%;*/
+    width: 100%;
+    height: auto;
+    padding: 0;
+}
+
+h1 {
+    font-size: 75px;
+    margin-bottom: 0px;
+}
+
+form p {
+    text-align: center;
+    font-size: 18px;
+}
+
+#aboutButton {
+    /*margin: -20px -50px; */
+    align-content: center;
+    left:40%;
+}
+
+#index-banner-about {
+    position: absolute;
+    top: 18%;
+    width: 100%;
+    height: 200px;
+    padding: 0;
+}
+
+/*.page-footer {
+    width: 100%;
+    position: absolute;
+}*/
+
+/*p {
+    width: 145px;
+    margin-top: 90px;
+    margin-right: 100px;
+    margin-bottom: 0px;
+    font-size: 10px;
+}*/

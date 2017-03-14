@@ -1,0 +1,208 @@
+<div class="fullscreen-bg">
+        <video poster="../Media/aboutpagebackground.webmhd.webm" autoplay="" class="fullscreen-bg__video" loop="">
+        <!--<source src="../Media/BlackSandsVik30R.webmhd.webm">-->
+         <source src="../Media/dashboardbackground.webmhd.webm"></video>
+    </div>
+    <div class="no-pad-bot" id="index-banner-about">
+        <div class="container">
+            <h1 class="header center white-text">What We Do</h1>
+            <!-- <div class="row center">
+                <h5 class="white-text header col s12 light">Let's tell it
+                Together</h5>
+            </div> -->
+
+    <div class="row-container">
+        <div class="container">
+            <div class="section">
+                <!--   Icon Section   -->
+                <div class="row">
+                    <div class="col s12 m4">
+                        <div class="icon-block">
+                            <h2 class="center white-text"><i class="medium material-icons">perm_identity</i></h2>
+                            <h5 class="center white-text">Problem</h5>
+                            <p class="light white-text">Within the Film
+                            Industry, there are very few avenues of entering
+                            into the industry full time. Almost every filmmaker
+                            attempts to join the industry because they have a
+                            Story to tell, or they want to help others tell
+                            theirs. But the majority never make it into the
+                            industry, therefore those Stories are never told to
+                            the World.</p>
+                        </div>
+                    </div>
+                    <div class="col s12 m4">
+                        <div class="icon-block">
+                            <h2 class="center white-text"><i class="medium material-icons">settings</i></h2>
+                            <h5 class="center white-text">Solution</h5>
+                            <p class="light white-text">By locating other
+                            Story-Tellers around you, we provide you with the
+                            opportunity to combine talents and ideas to create
+                            the Untold Stories you have dreamt of. We compile
+                            the team and give you the keys to create without wasting time and resources.</p>
+                        </div>
+                    </div>
+                    <div class="col s12 m4">
+                        <div class="icon-block">
+                            <h2 class="center white-text"><i class="medium material-icons">group</i></h2>
+                            <h5 class="center white-text">Result</h5>
+                            <p class="light white-text">Everyone has a voice. The Stories and Ideas that go to waste can now become reality. Now, passions and talents can be used to their fullest potential. Now, the Untold can be shared with the World. Let's work together, because together, we can tell your Story.</p>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+        <button id="aboutButton" class="btn-large waves-effect waves-light green" ng-click="signUp()">Let's Get Started</button>
+    </div>
+
+<!-- Sign Up Modal -->
+        <div ng-controller="app.auth.controller as auth">
+            <div class="modal fade bs-example-modal-lg" id="signUpModal">
+                  <div class="modal-content signUpContent">
+                      <form class="userInfo" ng-submit="auth.register.submit($event)">
+                          <h2>Create New Account</h2>
+                            <ul>
+                                <li>
+                                    <input class="infoFields form-control" type="text" name="firstName" placeholder="Enter First Name" ng-model='auth.payload.firstName' />
+                                </li>
+                                <li>
+                                    <input class="infoFields form-control" type="text" name="lastName" placeholder="Enter Last Name" ng-model='auth.payload.lastName' />
+                                </li>
+                                <li>
+                                    <input class="infoFields form-control" type="email" name="email" placeholder="Enter E-mail" ng-model="auth.payload.email" />
+                                </li>
+                                <li>
+                                    <input class="infoFields form-control" type="password" name="password" placeholder="Enter Password" ng-model='auth.payload.password'/>
+
+                                <li>
+                                    <input required class="infoFields form-control" type="text" name="city" placeholder="Enter City" ng-model="auth.payload.city"/>
+                                </li>
+                                    <select required ng-model='auth.payload.state' class="browser-default background white black-text" style="width: 100%; display:flex">
+                                        <option value="" disabled selected>State</option>
+                                        <option value="AL">Alabama</option>
+                                        <option value="AK">Alaska</option>
+                                        <option value="AZ">Arizona</option>
+                                        <option value="AR">Arkansas</option>
+                                        <option value="CA">California</option>
+                                        <option value="CO">Colorado</option>
+                                        <option value="CT">Connecticut</option>
+                                        <option value="DE">Delaware</option>
+                                        <option value="DC">District Of Columbia</option>
+                                        <option value="FL">Florida</option>
+                                        <option value="GA">Georgia</option>
+                                        <option value="HI">Hawaii</option>
+                                        <option value="ID">Idaho</option>
+                                        <option value="IL">Illinois</option>
+                                        <option value="IN">Indiana</option>
+                                        <option value="IA">Iowa</option>
+                                        <option value="KS">Kansas</option>
+                                        <option value="KY">Kentucky</option>
+                                        <option value="LA">Louisiana</option>
+                                        <option value="ME">Maine</option>
+                                        <option value="MD">Maryland</option>
+                                        <option value="MA">Massachusetts</option>
+                                        <option value="MI">Michigan</option>
+                                        <option value="MN">Minnesota</option>
+                                        <option value="MS">Mississippi</option>
+                                        <option value="MO">Missouri</option>
+                                        <option value="MT">Montana</option>
+                                        <option value="NE">Nebraska</option>
+                                        <option value="NV">Nevada</option>
+                                        <option value="NH">New Hampshire</option>
+                                        <option value="NJ">New Jersey</option>
+                                        <option value="NM">New Mexico</option>
+                                        <option value="NY">New York</option>
+                                        <option value="NC">North Carolina</option>
+                                        <option value="ND">North Dakota</option>
+                                        <option value="OH">Ohio</option>
+                                        <option value="OK">Oklahoma</option>
+                                        <option value="OR">Oregon</option>
+                                        <option value="PA">Pennsylvania</option>
+                                        <option value="RI">Rhode Island</option>
+                                        <option value="SC">South Carolina</option>
+                                        <option value="SD">South Dakota</option>
+                                        <option value="TN">Tennessee</option>
+                                        <option value="TX">Texas</option>
+                                        <option value="UT">Utah</option>
+                                        <option value="VT">Vermont</option>
+                                        <option value="VA">Virginia</option>
+                                        <option value="WA">Washington</option>
+                                        <option value="WV">West Virginia</option>
+                                        <option value="WI">Wisconsin</option>
+                                        <option value="WY">Wyoming</option>
+                                    </select>
+
+
+                                    <select ng-model='auth.payload.crew' class="browser-default background white black-text" style="width: 100%; display:flex">
+                                        <option value="" disabled selected>Crew Position</option>
+                                        <option value="Art Director">Art Director</option>
+                                        <option value="Best Boy Lighting">Best Boy Lighting</option>
+                                        <option value="Boom Operator">Boom Operator</option>
+                                        <option value="Camera Operator">Camera Operator</option>
+                                        <option value="Carpenter">Carpenter</option>
+                                        <option value="Casting Director">Casting Director</option>
+                                        <option value="Cinematographer (Director of Photography)">Cinematographer (Director of Photography)</option>
+                                        <option value="Composer">Composer</option>
+                                        <option value="Construction Coordinator">Construction Coordinator</option>
+                                        <option value="Costume Designer">Costume Designer</option>
+                                        <option value="Costume Supervisor">Costume Supervisor</option>
+                                        <option value="Costumer">Costumer</option>
+                                        <option value="Director">Director</option>
+                                        <option value="Dolly Grip">Dolly Grip</option>
+                                        <option value="Film Editor">Film Editor</option>
+                                        <option value="First Assistant Camera (1st A.C.)">First Assistant Camera (1st A.C.)</option>
+                                        <option value="First Assistant Director (1st A.D.)">First Assistant Director (1st A.D.)</option>
+                                        <option value="Gaffer">Gaffer</option>
+                                        <option value="Grip">Grip</option>
+                                        <option value="Hair Stylist">Hair Stylist</option>
+                                        <option value="Head Carpenter">Head Carpenter</option>
+                                        <option value="Illustrator">Illustrator</option>
+                                        <option value="Key Grip">Key Grip</option>
+                                        <option value="Key Makeup Artist">Key Makeup Artist</option>
+                                        <option value="Lead Man">Lead Man</option>
+                                        <option value="Lighting Technician">Lighting Technician</option>
+                                        <option value="Makeup Artist">Makeup Artist</option>
+                                        <option value="Music Supervisor">Music Supervisor</option>
+                                        <option value="Production Designer">Production Designer</option>
+                                        <option value="Second Assistant Camera (2nd A.C.)">Second Assistant Camera (2nd A.C.)</option>
+                                        <option value="Second Assistant Director (2nd A.D.)">Second Assistant Director (2nd A.D.)</option>
+                                        <option value="Set Decorator">Set Decorator</option>
+                                        <option value="Set Designer">Set Designer</option>
+                                        <option value="Set Dresser">Set Dresser</option>
+                                        <option value="Sound Designer">Sound Designer</option>
+                                        <option value="Sound Editor">Sound Editor</option>
+                                        <option value="Sound Mixer">Sound Mixer</option>
+                                        <option value="Special Effects Supervisor">Special Effects Supervisor</option>
+                                        <option value="Stunt Coordinator">Stunt Coordinator</option>
+                                        <option value="Stuntman">Stuntman</option>
+                                        <option value="Visual Effects Producer">Visual Effects Producer</option>
+                                    </select>
+                                </ul>
+                          <input type="submit" value="Submit" class="btn-large waves-effect waves-light green btn-success" data-target="signUpModal" data-toggle="modal" ng-click="submitSignIn()" >
+                         </form>
+                  </div>
+          </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <footer class="page-footer black">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m4">
+                    <h5 class="white-text" style="text-align: left;">Who We
+                    Are</h5>
+                    <p class="grey-text text-lighten-4">We are a team of
+                    Story-Tellers with a Passion for unleashing the impact that
+                    stories have on the world.</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                Footage Courtesy of <a class="white-text text-lighten-3" href="http://www.dronebois.com/">DRONEBOIS</a>
+            </div>
+        </div>
+    </footer> -->
